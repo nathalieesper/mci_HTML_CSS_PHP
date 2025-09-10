@@ -1,0 +1,12 @@
+{
+  "name": "Cours HTML CSS",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "techer.open-in-browser",
+        "bmewburn.vscode-intelephense-client"
+      ]
+    }
+  }
+}
