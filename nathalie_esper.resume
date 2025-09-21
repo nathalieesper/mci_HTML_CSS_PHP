@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nathalie Esper - Chemistry student at University of Strasbourg with extensive laboratory experience and expertise in analytical techniques">
+    <meta name="keywords" content="chemistry, physics, laboratory technician, TEM analysis, University of Strasbourg, analytical chemistry, computer science">
+    <meta name="author" content="Nathalie Esper">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <title>Nathalie Esper - Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .cv-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cv-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 35px;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #2980b9;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+
+        h4 {
+            color: #8e44ad;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        h5 {
+            color: #27ae60;
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+
+        h6 {
+            color: #e74c3c;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .two-column {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .left-column {
+            flex: 1;
+        }
+
+        .right-column {
+            flex: 1;
+        }
+
+        .education-item, .job-item {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .job-description {
+            margin-top: 10px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .institution {
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            background: #ecf0f1;
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        ol li {
+            background: transparent;
+            border-radius: 0;
+            padding: 5px 0;
+        }
+
+        li:hover {
+            background: #3498db;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        ol li:hover {
+            background: transparent;
+            color: #333;
+            transform: none;
+        }
+
+        li::before {
+            content: "▶";
+            color: #3498db;
+            margin-right: 10px;
+        }
+
+        ol li::before {
+            content: none;
+        }
+
+        li:hover::before {
+            color: white;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .skill-item {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+        }
+
+        .languages-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .languages-table caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+
+        .languages-table th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .languages-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .languages-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .languages-table tr:hover {
+            background: #e3f2fd;
+        }
+
+        .languages-table tfoot {
+            font-style: italic;
+            background: #f1f3f4;
+        }
+
+        .hobbies {
+            text-align: center;
+        }
+
+        .hobby-item {
+            display: inline-block;
+            background: linear-gradient(135deg, #fd79a8, #fdcb6e);
+            color: white;
+            margin: 5px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        em {
+            color: #8e44ad;
+        }
+
+        b {
+            color: #34495e;
+        }
+
+        i {
+            color: #7f8c8d;
+        }
+
+        abbr {
+            border-bottom: 1px dotted #3498db;
+            cursor: help;
+        }
+
+        time {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #e74c3c;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8e6cf 0%, #dcedc1 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #27ae60;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #7f8c8d;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, #74b9ff, #0984e3);
+            margin: 30px 0;
+            border-radius: 1px;
+        }
+
+        blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        sub {
+            font-size: 0.8em;
+            vertical-align: sub;
+        }
+
+        sup {
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                flex-direction: column;
+            }
+            
+            body {
+                padding: 10px;
+            }
+            
+            .cv-container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="cv-container">
+            <header>
+                <h1>Nathalie Esper</h1>
+                <p class="subtitle">Chemistry Student | Laboratory Technician | Research Enthusiast</p>
+
+                <address class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:espernataly@gmail.com">espernataly@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+33751476847">+33 7 51 47 68 47</a></p>
+                    <p><strong>Address:</strong> 52 Rue du Fossé des Tanneurs, 67000 Strasbourg, France</p>
+                    <p><strong>Date of Birth:</strong> <time datetime="2002-09-18">September 18, 2002</time></p>
+                </address>
+            </header>
+
+            <section class="highlight">
+                <h2>Professional Summary</h2>
+                <blockquote>
+                    <p><strong>About Me:</strong> A <em>proactive individual</em> studying at the <i>University of Strasbourg</i>. I am recognized not only for my <b>ambition</b> and rigor but also for my deep-rooted passion for <strong>physics</strong>, <strong>chemistry</strong>, and <strong>computer science</strong>, which I've cultivated from a young age. My four years of experience in an analytical laboratory has equipped me with practical and theoretical knowledge in various physicochemical concepts.</p>
+                </blockquote>
+            </section>
+
+            <hr>
+
+            <div class="two-column">
+                <aside class="left-column">
+                    <section>
+                        <h2>Education</h2>
+                        
+                        <article class="education-item">
+                            <h3>Master in <abbr title="Chemistry, Physics, Informatics, Analytics and Materials">CPIAM</abbr></h3>
+                            <p class="institution">University of Strasbourg, Strasbourg</p>
+                            <p class="date"><time datetime="2023-09">September 2023</time> - Present</p>
+                            <p><em>Specializing in Chemistry, Physics, Informatics, Analytics and Materials</em></p>
+                        </article>
+
+                        <article class="education-item">
+                            <h3>Bachelor of Science in Chemistry</h3>
+                            <p class="institution">University of Strasbourg, Strasbourg</p>
+                            <p class="date"><time datetime="2020-09">September 2020</time> - <time datetime="2023-06">June 2023</time></p>
+                            <ul>
+                                <li>Showcased perseverance and depth of Chemical knowledge</li>
+                                <li>Achieved pinnacle of success in Chemistry course</li>
+                                <li>Persistent and disciplined academic journey</li>
+                            </ul>
+                        </article>
+
+                        <article class="education-item">
+                            <h3>Scientific Baccalaureate <abbr title="Sciences de la Vie">SV</abbr></h3>
+                            <p class="institution">Saint Joseph School, Zouk-Mikaël</p>
+                            <p class="date"><time datetime="2019-09">September 2019</time> - <time datetime="2020-07">July 2020</time></p>
+                            <ol>
+                                <li>Excelled in advanced scientific coursework</li>
+                                <li>Demonstrated strong practical skills in lab settings</li>
+                                <li>Earned high distinction and academic honors</li>
+                            </ol>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h2>Languages</h2>
+                        <table class="languages-table">
+                            <caption>Language Proficiency Overview</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Language</th>
+                                    <th scope="col">Proficiency</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Arabic</strong></td>
+                                    <td>Native</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>French</strong></td>
+                                    <td>Fluent</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>English</strong></td>
+                                    <td>Advanced</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Spanish</strong></td>
+                                    <td>Intermediate</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2"><em>Multilingual professional communication</em></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                </aside>
+
+                <section class="right-column">
+                    <h2>Experience</h2>
+                    <section>
+                        <h2>Professional Experience</h2>
+                        
+                        <article class="job-item">
+                            <h3>Laboratory Technician - <abbr title="Transmission Electron Microscopy">TEM</abbr> Analysis</h3>
+                            <h4 class="institution">Flashlab, Strasbourg</h4>
+                            <p class="date"><time datetime="2023-06">June 2023</time> - Present</p>
+                            <div class="job-description">
+                                <p>Analytical <strong>Transmission Electron Microscopy</strong> analysis for determination of asbestos fibers in materials. Conduct qualitative searches identifying morphology, crystalline structure, and elemental chemical composition with magnifications ranging from <strong>10<sup>4</sup> to 2×10<sup>4</sup> times</strong>.</p>
+                            </div>
+                        </article>
+
+                        <article class="job-item">
+                            <h3>Laboratory Technician - Sample Deposition</h3>
+                            <h4 class="institution">Flashlab, Strasbourg</h4>
+                            <p class="date"><time datetime="2022-06">June 2022</time> - Present</p>
+                            <div class="job-description">
+                                <p>Sample preparation involving rinsing, crushing, and vortexing phases for <abbr title="Microscopy and Elemental Analysis">META</abbr> analysis. Expertise in preparing conductive supports and ensuring proper material deposition thickness for electron transmission.</p>
+                            </div>
+                        </article>
+
+                        <article class="job-item">
+                            <h3>Laboratory Technician - Sample Preparation</h3>
+                            <h4 class="institution">Flashlab, Strasbourg</h4>
+                            <p class="date"><time datetime="2021-06">June 2021</time> - Present</p>
+                            <div class="job-description">
+                                <p>Comprehensive sample preparation including safety protocol management, sample collection sequencing, meticulous verification procedures, and precision solvent addition for analysis.</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section>
+                        <h2>Internships</h2>
+                        
+                        <article class="job-item">
+                            <h3>Research Intern</h3>
+                            <h4 class="institution">Laboratory of Membrane Biophysics and <abbr title="Nuclear Magnetic Resonance">NMR</abbr>, Strasbourg</h4>
+                            <p class="date"><time datetime="2024-04">April 2024</time> - <time datetime="2024-05">May 2024</time></p>
+                            <div class="job-description">
+                                <p>Research on <strong>antimicrobial peptides</strong> from the magainin family (<em>PGLa</em> and <em>magainin 2</em>). Conducted fluorescence quenching experiments of <abbr title="7-Nitro-2,1,3-benzoxadiazol-4-yl">NBD</abbr>-labelled peptide variants to study membrane interactions.</p>
+                                <dl>
+                                    <dt>Research Methods:</dt>
+                                    <dd>Fluorescence spectroscopy</dd>
+                                    <dd>Membrane biophysics analysis</dd>
+                                    <dt>Key Findings:</dt>
+                                    <dd>Synergistic antimicrobial effects</dd>
+                                </dl>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+            </div>
+
+            <hr>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Time Management</div>
+                    <div class="skill-item">Communication</div>
+                    <div class="skill-item">Creativity</div>
+                    <div class="skill-item">Attention to Detail</div>
+                    <div class="skill-item">Teamwork</div>
+                    <div class="skill-item">Analytical Chemistry</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Computer Skills</h2>
+                <h5>Programming Languages:</h5>
+                <ul>
+                    <li><strong><code>Java</code></strong> - Object-oriented programming</li>
+                    <li><strong><code>Python</code></strong> - Data analysis and scientific computing</li>
+                </ul>
+                <h5>Scientific Software:</h5>
+                <ul>
+                    <li><strong><code>Conquest</code></strong> - Scientific software</li>
+                    <li><strong><code>Spartan</code></strong> - Molecular modeling</li>
+                    <li><strong><code>Mercury</code></strong> - Crystal structure visualization</li>
+                </ul>
+            </section>
+
+            <footer>
+                <section>
+                    <h2>Hobbies & Interests</h2>
+                    <h6>Personal Activities:</h6>
+                    <div class="hobbies">
+                        <span class="hobby-item">Scouting</span>
+                        <span class="hobby-item">Music (DJ)</span>
+                        <span class="hobby-item">Guitar Player</span>
+                        <span class="hobby-item">Singer</span>
+                        <span class="hobby-item">Football</span>
+                        <span class="hobby-item">Rugby</span>
+                        <span class="hobby-item">Programming</span>
+                        <span class="hobby-item">Writing & Reading</span>
+                    </div>
+                    <br>
+                    <p><small>Last updated: <time datetime="2024">2024</time></small></p>
+                </section>
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
